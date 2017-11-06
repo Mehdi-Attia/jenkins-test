@@ -24,4 +24,10 @@ public class StudentTest {
 		assertEquals(1725.0, studentService.claculateSalary(student), 1);
 	}
 
+	
+	@Test
+	public void testVipSalary() {
+		assertEquals(2000, studentService.claculateVipSalary(student), 1);
+	}
+
 }

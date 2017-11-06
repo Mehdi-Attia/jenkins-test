@@ -5,16 +5,18 @@ public class Teacher {
 	private long id;
 	private String name;
 	private double salary;
-	
+	private String email;
+
 	public Teacher() {
 		super();
 	}
 
-	public Teacher(long id, String name, double salary) {
+	public Teacher(long id, String name, double salary, String email) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.salary = salary;
+		this.email = email;
 	}
 
 	public long getId() {
@@ -39,6 +41,14 @@ public class Teacher {
 
 	public void setSalary(double salary) {
 		this.salary = salary;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	@Override
@@ -67,5 +77,5 @@ public class Teacher {
 	public String toString() {
 		return "Teacher [id=" + id + ", name=" + name + ", salary=" + salary + "]";
 	}
-	
+
 }
